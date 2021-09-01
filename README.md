@@ -6,3 +6,4 @@
 - [python 4 everybody](https://www.py4e.com/)
 - [geeks for geeks](https://www.geeksforgeeks.org/)
 - [python doc](https://docs.python.org/3/)
+- [stackoverflow (forum)](https://stackoverflow.com/)
