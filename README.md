@@ -1,3 +1,8 @@
 # mental-health-sol
-![Laughing emoji](https://user-images.githubusercontent.com/89840009/131485578-0ec05f19-8015-498f-a0b4-a0900d2ffb87.jpeg)
-Add any pictures worh
+## TODO
+- [ ] [todo list](https://github.com/liang799/mental-health-sol/projects/1)
+
+## Learning Resources
+- [python 4 everybody](https://www.py4e.com/)
+- [geeks for geeks](https://www.geeksforgeeks.org/)
+- [python doc](https://docs.python.org/3/)
