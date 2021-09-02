@@ -1,0 +1,240 @@
+=======================
+##defining##
+x=3//define x as an integer and assign 3 to x(value of x can be changed later)
+setname = ['item1', 'item2', 'item3']//define 'setname' as a set
+=======================
+##printing##
+print('hello')
+...
+hello
+=======================
+##type and class declaration##
+count = 1
+print(count)
+type(count)
+...
+1
+<class 'int'>
+=======================
+##retrieving random function##
+import random
+x = random.randint(5, 10)
+print(x)
+...
+8//gives a number between 5 and 10 inclusive 
+=======================
+##create own function##
+def print_test()://defining a function
+    print('test')
+print_test()
+print(' ')//create a space(refer to [1])
+
+def print2_test():
+    print_test()//initiating a function within another function
+    print_test()
+print2_test()
+...
+test
+[1]
+test
+test
+=======================
+##function with argument##
+def test_print(x):
+    print(x)
+y=input('anything')
+test_print(y)
+...
+anythingwzyd123
+wzyd123
+=======================
+##retrieving math function##
+import math //retrieve math 
+=======================
+##conditional##
+x = int(input("number"))
+if x > 0:
+    print('x is positive')
+elif x == 0:
+    print('x is zero')
+else:
+    print('x is negative')
+...
+number1
+x is positive 
+=======================
+##TRY and EXCEPT##
+x = input("number")
+try:
+    y = float(x)
+    z = (y-1)+1
+    print(z)
+except:
+    print('enter a number')
+...
+numberz
+enter a number
+=======================
+##taking a input##
+Ttmp = input("key in temperature:")
+print("temperature: ", temp)
+...
+key in temperature: 74
+temperature: 74
+=======================
+##"while" statement##(use True for infinite loop)(use False to eliminate loop)
+n=5
+while n>0:
+    print(n)
+    n = n-1
+print('Blastoff!')
+...
+5
+4
+3
+2
+1
+Blastoff!
+=======================
+##finishing and continuing iteration using "continue" and break##
+while True://infinite loop
+    line = input('> ')
+    if line[0] == '#'://line[0] is the first character of the string
+        continue
+    if line == 'done'://if input is 'done', infinite loop stops
+        break
+    print(line)
+print('Done!')
+=======================
+##definite loop using "for" loop##
+name = ['friend1', 'friend2', 'friend3']//define name as set and assign friend(1-3) in the set
+for friend in name://for loops continue until all items in set have been "used"
+    print('Hello', friend)
+print('Done!')
+...
+Hello friend1
+Hello friend2
+Hello friend3
+Done!
+=======================
+##counting items in a set##
+count = 0
+for itervar in [3, 41, 12, 9, 74, 15]:
+    count = count + 1
+print('Count: ', count)
+...
+Count: 6
+=======================**
+##summing sets##
+total = 0
+for x in [1, 2, 3, 4]:
+    total = total + x//adds up all the number in the set into total
+print('Total: ', total)
+...
+Total: 10
+=======================
+##finding maximum/minimum number in a set##
+largest = None//None is a special constant used to mark a variable as empty
+for x in [3, 41, 12, 9, 74, 15]:
+    if largest is None or x > largest ://for maximum use >, for minimum use <
+        largest = x
+print('Largest:', largest)
+...
+Largest: 74
+=======================
+##finding length of a string##
+word = 'testword'
+length = len(word)
+print(length)
+...
+8
+=======================
+##printing certain parts of a string##
+word = 'test word'
+print(word[0:4])//first character is 0
+print(word[5:9])
+...
+test
+word
+=======================
+##counting amount of specific character appearing in a string##
+word = 'aabbcccd'
+count = 0
+for letter in word:
+    if letter == 'c':
+        count = count + 1//for each c appearing in "word", count is increase by 1
+print(count)
+...
+3
+=======================
+##making first charcter of a word upper case##
+word = "this hackathon is a pain"
+newword = word.title()
+print(newword)
+...
+This Hackathon Is A Pain
+=======================
+##filtering out certain parts##
+word = "this hackathon is a pain "
+firstletter = word.find('p')
+print(firstletter)
+lastletter = word.find(' ', firstletter)
+print(lastletter)
+word = word[firstletter:lastletter]
+print(word)
+...
+20
+24
+pain
+=======================
+##reading a file##
+word = open("test.txt")//ensure txt file is placed into folder with 3x3 test
+inp = word.read()
+print(inp,'\n')//print all characters
+print(inp[:16])//print first 16 characters
+...
+test test test
+test test test
+test test test
+test test test
+test test test
+test test test
+
+test test test
+t
+=======================
+##finding specific lines in a txt file##
+{ From: test1
+test test test
+test test test
+From: test2
+test test test
+From: test3 }//txt file
+
+word = open("test.txt")
+for line in word:
+    line = line.rstrip()
+    if line.startswith('From:'):
+        print(line)
+...
+From: test1
+From: test2
+From: test3
+=======================
+##writing a txt file##
+word = open('testopen.txt', 'w')//file file does not exist, new one created. If reinitialised, file restarts
+print(word)
+line0 = input('Enter random word: ')
+word.write(line0)
+line1 = input('Enter 2nd random word: ')
+word.write('\n'+line1)
+word.close()
+...
+<_io.TextIOWrapper name='testopen.txt' mode='w' encoding='cp1252'>
+Enter random word: test 1
+Enter 2nd random word: test 2
+...
+text file created will be:
+test 1
+test 2
+=======================
