@@ -7,3 +7,6 @@ anxious
 angry
 mad
 nervous
+ashamed
+furious
+depressed

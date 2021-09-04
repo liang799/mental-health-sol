@@ -1,0 +1,4 @@
+Name:Alice
+Age:21
+Degree:Bachelor Cse
+University:Northeastern Univ
