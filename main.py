@@ -41,15 +41,17 @@ async def on_message(message):
         keyword = word2
   print('Keyword entered: ', keyword)
 
-  query = keyword + ' music'
+  query = 'anti ' + keyword + ' music'
   print('Final Query: ', query)
 
-  
   testdict = {
-    "Mindfull1": "Hacks1"
-    "Mindfull2" : "Hacks2"
+    "Mindfull1": "Hacks1",
+    "Mindfull2" : "Hacks2",
     "Mindfull3" : "Hacks3"
   }
+  diction = open('stuff.txt', 'w')
+  diction.write(str(testdict))
+  
 
 
 
