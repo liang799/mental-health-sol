@@ -5,6 +5,9 @@
 ## Guide
 Click this [link](https://discord.com/oauth2/authorize?client_id=883604218915725312&permissions=257698495552&scope=bot) to get started
 
+<br>
+<br>
+
 # The instructions below are to host the bot
 ## Prerequisites: 
 - python
