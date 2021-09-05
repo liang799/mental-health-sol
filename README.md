@@ -5,6 +5,7 @@
 
 ## Build (to host the bot)
 Download the source code using git or through this website.
+The following commands are needed so that python can successfully import the libraries
 ```bash
 $ pip install google-api-python-client
 $ pip install google-api-core
