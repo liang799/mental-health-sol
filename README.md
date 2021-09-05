@@ -1,23 +1,27 @@
 # mental-health-sol
 ## Prerequisites if you want to host the bot: 
 - python
-- A computer or server that runs 24/7
+- A [computer](https://www.aftershockpc.com/) or [server](https://aws.amazon.com/free/) that runs 24/7, prefably Linux
 
 ## Build (to host the bot)
+Download the source code using git or through this website.
 ```bash
 $ pip install google-api-python-client
 $ pip install google-api-core
 $ pip install discord.py
 ```
-Then navigate to the folder containing `main.py` using `cd`. 
-Next, run this command:
-```bash
-$ Python main.py &         # to run in background
-```
 
 ## Installation
-After activating the developer portal for your discord account, navigate your way to the application page. Click on the new application button 
+1. After activating the developer portal for your discord account, navigate your way to the application page. 
+2. Click on the **new application** button.
+3. Add the bot under the **Bot** tab.
+4. On the same bot tab, click to reveal `secret token` and copy it.
+5. Go to the last line of `main.py` and fill in `client.run('secret_token')`
 
 ## How to use
 After running the program, users will need to just start typing his/her feeling to the discord channel. As long as the word contains a negative feeling(as long as the negative.txt file contains the feeling. Update to increase the number of feelings), the bot shall return youtube links for music/videos that are related to the feeling.
 
+Navigate to the folder containing `main.py` using `cd`. 
+```bash
+$ Python main.py &         # to run in background
+```
