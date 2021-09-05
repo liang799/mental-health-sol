@@ -39,7 +39,7 @@ async def on_message(message):
     for word2 in words:
       if word1 == word2:
         keyword = word2
-        query = 'music for ' + keyword + ' people'
+        query = 'music for ' + keyword + ' healing'
   print('Keyword entered: ', keyword)
   print('Final Query: ', query)
 
@@ -58,7 +58,7 @@ async def on_message(message):
     request = youtube.search().list(
         part="snippet",
         maxResults=5,
-        q="query",
+        q=query,
         safeSearch="strict"
     )
     response = request.execute()
