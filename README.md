@@ -15,7 +15,7 @@ $ pip install discord.py
 1. After activating the developer portal for your discord account, navigate your way to the application page. 
 2. Click on the **new application** button.
 3. Add the bot under the **Bot** tab.
-4. On the same bot tab, click to reveal `secret token` and copy it.
+4. On the same bot tab, click to reveal `secret_token` and copy it.
 5. Go to the last line of `main.py` and fill in `client.run('secret_token')`
 
 A helpful [guide](https://www.howtogeek.com/364225/how-to-make-your-own-discord-bot) if the instructions above are unclear
