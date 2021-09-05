@@ -18,6 +18,8 @@ $ pip install discord.py
 4. On the same bot tab, click to reveal `secret token` and copy it.
 5. Go to the last line of `main.py` and fill in `client.run('secret_token')`
 
+A helpful [guide](https://www.howtogeek.com/364225/how-to-make-your-own-discord-bot) if the instructions above are unclear
+
 ## How to use
 After running the program, users will need to just start typing his/her feeling to the discord channel. As long as the word contains a negative feeling(as long as the negative.txt file contains the feeling. Update to increase the number of feelings), the bot shall return youtube links for music/videos that are related to the feeling.
 
