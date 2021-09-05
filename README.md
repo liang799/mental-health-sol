@@ -1,7 +1,7 @@
 # mental-health-sol
 ## Prerequisites if you want to host the bot: 
-python
-A computer or server that runs 24/7
+- python
+- A computer or server that runs 24/7
 
 ## Build (to host the bot)
 ```bash
