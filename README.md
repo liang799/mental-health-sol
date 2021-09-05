@@ -1,9 +1,16 @@
-# mental-health-sol
-## Prerequisites if you want to host the bot: 
+# Quick Start guide
+## Prerequisites:
+- Have a Discord account
+- Have administrative priviledges on the server that you are on
+## Guide
+Click this [link](https://discord.com/oauth2/authorize?client_id=883604218915725312&permissions=257698495552&scope=bot) to get started
+
+# The instructions below are to host the bot
+## Prerequisites: 
 - python
 - A [computer](https://www.aftershockpc.com/) or [server](https://aws.amazon.com/free/) that runs 24/7, prefably Linux
 
-## Build (to host the bot)
+## Build
 Download the source code using git or through this website.
 
 The following commands are needed so that python can successfully import the libraries:
