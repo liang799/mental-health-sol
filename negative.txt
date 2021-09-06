@@ -7,3 +7,14 @@ anxious
 angry
 mad
 nervous
+ashamed
+furious
+depressed
+unhappy
+dejected
+moody
+dispirited
+downcast
+downhearted
+heartbroken
+sorrowful

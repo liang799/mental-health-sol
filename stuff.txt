@@ -1,1 +1,0 @@
-{'Mindfull1': 'Hacks1', 'Mindfull2': 'Hacks2', 'Mindfull3': 'Hacks3'}

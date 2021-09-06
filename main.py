@@ -1,10 +1,9 @@
-#import os
+import os
 import discord
 import re
 import googleapiclient.discovery
 import csv
 
-#words = ['sad', 'melancholic', 'useless', 'retarded', 'anxiety', 'anxious', 'angry', 'mad', 'depressed', 'unhappy', 'down', 'dejected', 'despondent', 'downhearted', 'spiritless', 'pessimistic', 'bitter', 'heartbroken', 'sorrowful', 'distressed', 'grieve', 'troubled', 'mournful', 'somber', 'morbid']
 client = discord.Client()
 #TOKEN = os.getenv('DISCORD_TOKEN')
 
@@ -34,57 +33,58 @@ async def on_message(message):
     words.append(line)
 
   #finding the keyword
-  keyword = 'tmp'
+  keyword = ''
+  query = ''
   for word1 in res:
     for word2 in words:
       if word1 == word2:
         keyword = word2
+        query = 'music for ' + keyword + ' healing'
   print('Keyword entered: ', keyword)
-
-  query = 'anti ' + keyword + ' music'
   print('Final Query: ', query)
-
-  testdict = {
-    "Mindfull1": "Hacks1",
-    "Mindfull2" : "Hacks2",
-    "Mindfull3" : "Hacks3"
-  }
-  diction = open('stuff.txt', 'w')
-  diction.write(str(testdict))
-  
-
-
-
-
 
   # YOUTUBE-API
   # Disable OAuthlib's HTTPS verification when running locally.
   # *DO NOT* leave this option enabled in production.
-  #os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
+  while len(query)!=0:
+    os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
+    api_service_name = "youtube"
+    api_version = "v3"
+    DEVELOPER_KEY = "AIzaSyBFAz11pBz7EaZ6tskOXo8exDCIlBzTusc"
+  
+    youtube = googleapiclient.discovery.build(
+        api_service_name, api_version, developerKey = DEVELOPER_KEY)
 
-  #api_service_name = "youtube"
-  #api_version = "v3"
-  #DEVELOPER_KEY = "AIzaSyBFAz11pBz7EaZ6tskOXo8exDCIlBzTusc"
-#
-#  youtube = googleapiclient.discovery.build(
-#      api_service_name, api_version, developerKey = DEVELOPER_KEY)
-#
-#  request = youtube.search().list(
-#      part="snippet",
-#      q=query,
-#      safeSearch="strict"
-#  )
-#  response = request.execute()
-#
-#  #print(response)
-#  try: 
-#    with open('links.csv') as f:  
-#      writer = csv.writer(f)
-#      for k, v in response.items():
-#        writer.writerow([k, v])
-#  except IOError:
-#    print("I/O error") 
-#
+    request = youtube.search().list(
+        part="snippet",
+        maxResults=5,
+        q=query,
+        safeSearch="strict"
+    )
+    response = request.execute()
+
+    try: 
+      with open("links.txt", 'w') as f:  
+        for key, value in response.items():  
+          f.write('%s:%s\n' % (key, value))
+      f.close()
+    
+      last_line = ''
+      file = open('links.txt', 'r')
+      for line in file:
+        video_link_array = [f"https://www.youtube.com/watch?v={video['id']['videoId']}" \
+          for video in response['items']]
+
+      await message.channel.send("Music to cheer you up: ")
+      
+      for link in video_link_array:
+        await message.channel.send(link)
+        
+      query = ''
+
+    except IOError:
+      print("I/O error") 
+
   return
 
 client.run('ODgzNjA0MjE4OTE1NzI1MzEy.YTMWjg.iU1SxH7dP4om7WkqPsp3V-W4mTg')
