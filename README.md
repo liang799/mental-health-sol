@@ -1,3 +1,7 @@
+# Mindfulness Discord Bot
+Just a quick note, our YouTube video is called Mindfulness Discord Bot demonstration, but I removed it due to the poor video quality and was planning to reupload it. Here is our [submission](https://devpost.com/software/discord-python-bot-0g14qa), which due to technical difficulties is incomplete.
+<br>
+
 # Quick Start guide
 ## Prerequisites:
 - Have a Discord account
