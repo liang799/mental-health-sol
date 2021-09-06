@@ -1,5 +1,5 @@
 # MindfulHacks Discord Bot
-[![Demonstration of ](.misc/preview.png)](https://youtu.be/CtlxeyeFFSQ "Click to watch")
+[![Demonstration of ](.misc/preview.png)](https://youtu.be/CtlxeyeFFSQ "Demonstration. You will be redirected to YouTube")
 
 ## Message from the devs
 Just a quick note, our [YouTube video](https://youtu.be/MqmW8C2NsnQ) is called **MindfulHacks Discord Bot demonstration**, but I removed it due to the poor video quality and was planning to reupload it. Here is our [submission](https://devpost.com/software/discord-python-bot-0g14qa), which due to technical difficulties is incomplete.
