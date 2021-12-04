@@ -4,6 +4,8 @@
 ## Message from the devs
 Just a quick note, our [YouTube video](https://youtu.be/MqmW8C2NsnQ) is called **MindfulHacks Discord Bot demonstration**, but I removed it due to the poor video quality and was planning to reupload it. Here is our [submission](https://devpost.com/software/discord-python-bot-0g14qa), which due to technical difficulties is incomplete.
 
+**Update:** Managed to submit the projects 3 months later
+
 ## Quick Start guide
 ### Prerequisites:
 - Have a Discord account
