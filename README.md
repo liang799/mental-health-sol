@@ -13,7 +13,7 @@ Just a quick note, our [YouTube video](https://youtu.be/MqmW8C2NsnQ) is called *
 ### Guide
 Click this [link](https://discord.com/oauth2/authorize?client_id=883604218915725312&permissions=257698495552&scope=bot) to get started
 
-**Update:** The link is no longer working as hosting a server is expensive
+**Update:** The link is no longer working as hosting on a server is expensive
 
 ## The instructions below are to host the bot
 ### Prerequisites: 
